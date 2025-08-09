@@ -1,0 +1,194 @@
+body {
+    margin: 0px;
+    background: url("https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: 2000px 2000px;
+    padding: 15px;;
+  }
+h1 {
+    text-align: center;
+    font-family:cursive;
+    background-color:bisque;
+}
+
+.robots {
+    display: flex;
+    justify-content: center;
+}
+
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
+.right_leg {
+    background-color: #5f93e8;
+}
+
+.head:hover,
+.left_arm:hover,
+.torso:hover,
+.right_arm:hover,
+.left_leg:hover,
+.right_leg:hover {
+    background-color:gold;
+}
+
+/*HEAD*/
+
+.head {
+    width: 200px;
+    margin: 0 auto;
+    height: 150px;
+    border-radius: 200px 200px 0 0;
+    margin-bottom: 10px;
+}
+
+.eyes {
+    display: flex;
+}
+
+.left_eye,
+.right_eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.left_eye {
+    position: relative;
+    top: 100px;
+    left: 40px;
+    animation-name: box;
+    animation-duration: 1s;
+    animation-iteration-count: 1000;
+    animation-delay:0.5s;
+}
+
+.right_eye {
+    position: relative;
+    top: 100px;
+    left: 120px;
+    animation-name: box;
+  animation-duration: 1s;
+  animation-iteration-count: 1000;
+  animation-delay:0.5s;
+    
+    
+}
+
+.head:hover {
+    width: 300px;
+    transition: 1s ease-in-out;
+    transform: translate(0px, -10px);
+}
+
+/*UPPER BODY*/
+
+.upper_body {
+    width: 300px;
+    height: 150px;
+    display: flex;
+}
+
+.torso {
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 50px 50px;
+}
+
+.torso {
+    transition: transform 1s;
+}
+
+.torso:hover {
+    transform: translate(10px, 10px);
+}
+
+.left_arm,
+.right_arm {
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+}
+
+.left_arm {
+    margin-right: 10px;
+    transition: transform 400ms;
+    transform-origin: right top;
+}
+
+.left_arm:hover {
+    -webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    -o-transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    transform: rotate(80deg);
+}
+
+.right_arm {
+    margin-left: 10px;
+    transition: transform 400ms;
+    transform-origin: left top;
+}
+
+.right_arm:hover {
+    -webkit-transform: rotate(-80deg);
+    -moz-transform: rotate(-80deg);
+    -o-transform: rotate(-80deg);
+    -ms-transform: rotate(-800deg);
+    transform: rotate(-80deg);
+}
+
+/*LOWER BODY*/
+
+.lower_body {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left_leg,
+.right_leg {
+    width: 40px;
+    height: 120px;
+    border-radius: 0 0 100px 100px;
+}
+
+.left_leg {
+    margin-left: 45px;
+}
+
+.left_leg:hover {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg {
+    margin-left: 35px;
+}
+
+.right_leg:hover {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+@keyframes box {
+    0% {background-color: red;}
+    10%{background-color: yellow;}
+    20%{background-color: green;}
+    30%{background-color: orange;}
+    40%{background-color: black;}
+    50%{background-color: pink;}
+    60%{background-color: white;}
+    70%{background-color: purple;}
+    80%{background-color: grey;}
+    90%{background-color: blue;}
+    100%{background-color:brown;}
+  }
